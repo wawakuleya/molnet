@@ -18,8 +18,13 @@
   --color-copper: #e2b768;
   --color-indigo-glow: #6366f1;
 
-  --font-header: "Cormorant Garamond", "Cinzel", "Playfair Display", "Noto Serif SC", serif;
-  --font-body: "Plus Jakarta Sans", "Manrope", "PingFang SC", "Noto Sans SC", sans-serif;
+  --font-header: "Cormorant Garamond", "Cinzel", "Playfair Display", -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+  --font-body: "Plus Jakarta Sans", "Manrope", -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
+:lang(zh) {
+  --font-header: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
 }
 
 @theme inline {

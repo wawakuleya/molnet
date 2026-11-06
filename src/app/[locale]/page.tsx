@@ -191,7 +191,7 @@ function Home() {
               <span>{t("philosophyEyebrow")}</span>
             </div>
 
-            <h2 className="mx-auto mt-8 max-w-4xl font-header text-3xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
+            <h2 className="mx-auto mt-8 max-w-5xl font-header text-2xl font-semibold tracking-tight sm:text-4xl md:text-[44px] lg:text-[48px] lg:leading-tight">
               <span className="gradient-gold block">
                 {t("philosophyTitle")}
               </span>

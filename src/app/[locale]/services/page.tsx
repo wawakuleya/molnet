@@ -66,8 +66,8 @@ function Services() {
         <Container>
           <Reveal>
             <Eyebrow>{t("eyebrow")}</Eyebrow>
-            <h1 className="mt-8 max-w-3xl font-header text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
-              <span className="gradient-heading">{t("title")}</span>
+            <h1 className="mt-8 max-w-5xl font-header text-3xl font-semibold tracking-tight sm:text-4xl md:text-[40px] lg:text-[46px] lg:leading-[1.2]">
+              <span className="gradient-heading inline-block">{t("title")}</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
               {t("leadBody")}
