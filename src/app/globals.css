@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  /* 60 / 30 / 10 palette per brand spec */
-  --color-bg-pure: #f8f9fa; /* 60% Nordic Cloud White */
-  --color-text-deep: #0b132b; /* 30% Deep Midnight Blue */
-  --color-accent-red: #d91b2a; /* 10% Dawn Cloud Red, darkened for AA text contrast */
-  --color-accent-red-bright: #e63946; /* original hue, decorative-only (non-text) uses */
+  /* Artistic & Elegant Luxury Midnight Palette */
+  --color-bg-pure: #07090e;
+  --color-bg-raised: #0d121f;
+  --color-bg-card: rgba(15, 22, 36, 0.65);
+  --color-border-soft: rgba(255, 255, 255, 0.08);
+  --color-border-glow: rgba(244, 63, 94, 0.35);
 
-  --color-bg-raised: #ffffff;
-  --color-border-soft: #e4e7eb;
-  --color-text-muted: #5c6478;
-  --color-copper: #a8643c;
+  --color-text-deep: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-text-subtle: #64748b;
 
-  --font-header: var(--font-playfair), "Noto Serif SC", serif;
-  --font-body: var(--font-manrope), "PingFang SC", "Noto Sans SC", sans-serif;
+  --color-accent-red: #f43f5e;
+  --color-accent-red-bright: #fb7185;
+  --color-accent-red-dark: #be123c;
+  --color-copper: #e2b768;
+  --color-indigo-glow: #6366f1;
+
+  --font-header: "Cormorant Garamond", "Cinzel", "Playfair Display", "Noto Serif SC", serif;
+  --font-body: "Plus Jakarta Sans", "Manrope", "PingFang SC", "Noto Sans SC", sans-serif;
 }
 
 @theme inline {
   --color-bg-pure: var(--color-bg-pure);
   --color-bg-raised: var(--color-bg-raised);
+  --color-bg-card: var(--color-bg-card);
   --color-text-deep: var(--color-text-deep);
   --color-text-muted: var(--color-text-muted);
+  --color-text-subtle: var(--color-text-subtle);
   --color-accent-red: var(--color-accent-red);
   --color-accent-red-bright: var(--color-accent-red-bright);
   --color-border-soft: var(--color-border-soft);
@@ -33,12 +41,13 @@
 * {
   transition-property: color, background-color, border-color, opacity,
     transform, box-shadow;
-  transition-duration: 0.4s;
-  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -55,6 +64,8 @@ body {
   background: var(--color-bg-pure);
   color: var(--color-text-deep);
   font-family: var(--font-body);
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 h1,
@@ -64,9 +75,80 @@ h4,
 h5,
 h6 {
   font-family: var(--font-header);
+  letter-spacing: -0.02em;
 }
 
 ::selection {
-  background: var(--color-accent-red);
-  color: var(--color-bg-pure);
+  background: rgba(244, 63, 94, 0.3);
+  color: #ffffff;
+}
+
+/* Glassmorphism Styles */
+.glass-capsule {
+  background: rgba(12, 16, 26, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.5),
+              0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+.glass-card {
+  background: rgba(13, 18, 31, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
+}
+
+/* Shimmer & Glow Effects */
+.gradient-heading {
+  background: linear-gradient(135deg, #ffffff 30%, #fecdd3 70%, #fda4af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, #ffffff 20%, #fde68a 60%, #e2b768 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-crimson-subtle {
+  box-shadow: 0 0 50px -10px rgba(244, 63, 94, 0.25);
+}
+
+.glow-ambient-pill {
+  box-shadow: 0 0 25px -4px rgba(244, 63, 94, 0.35);
+}
+
+/* Animated Aurora Keyframes */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1) translate3d(20px, -20px, 0);
+  }
+}
+
+@keyframes pulse-slower {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.15) translate3d(-25px, 20px, 0);
+  }
+}
+
+.animate-aurora-1 {
+  animation: pulse-slow 12s ease-in-out infinite alternate;
+}
+
+.animate-aurora-2 {
+  animation: pulse-slower 16s ease-in-out infinite alternate;
 }

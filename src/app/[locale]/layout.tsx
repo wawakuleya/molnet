@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Manrope } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -7,22 +6,8 @@ import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/site";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { InteractiveBackground } from "@/components/InteractiveBackground";
 import "../globals.css";
-
-// Noto Serif/Sans SC are loaded via the <link> tag below rather than
-// next/font/google: this font-data snapshot doesn't expose a CJK subset,
-// so self-hosting would silently drop the Chinese glyphs.
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["600", "700"],
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-  weight: ["400", "500", "600"],
-});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -49,8 +34,8 @@ export async function generateMetadata({
     alternates: {
       canonical: path,
       languages: {
-        zh: "/",
-        en: "/en",
+        en: "/",
+        zh: "/zh",
       },
     },
     openGraph: {
@@ -89,18 +74,21 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${playfair.variable} ${manrope.variable} h-full antialiased`}
+      className="h-full antialiased scroll-smooth"
     >
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap"
         />
       </head>
-      <body className="flex min-h-full flex-col bg-bg-pure text-text-deep">
+      <body className="relative flex min-h-full flex-col bg-[#07090e] text-slate-100 selection:bg-rose-500/30 selection:text-white">
+        <InteractiveBackground />
         <NextIntlClientProvider>
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main className="relative z-10 flex-1 pt-24">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

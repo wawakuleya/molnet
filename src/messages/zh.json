@@ -1,9 +1,9 @@
 {
   "meta": {
     "siteName": "红云文化传媒",
-    "siteNameEn": "Molnet",
-    "titleSuffix": "红云文化传媒有限公司",
-    "description": "红云文化传媒有限公司 — 文化与资本交汇，心智与价值共生。"
+    "siteNameEn": "Molnet Cultural Communication LLC",
+    "titleSuffix": "Molnet Cultural Communication LLC",
+    "description": "红云文化传媒（Molnet Cultural Communication LLC）— 文化与资本交汇，心智与价值共生。"
   },
   "nav": {
     "home": "首页",
@@ -23,7 +23,7 @@
     "eyebrow": "红云文化传媒",
     "heroTitleLine1": "文化与资本交汇",
     "heroTitleLine2": "心智与价值共生",
-    "heroSubtitle": "红云文化传媒有限公司致力于连接文化产业与资本市场，以专业洞察与国际视野，为客户创造长期价值。",
+    "heroSubtitle": "红云文化传媒（Molnet Cultural Communication LLC）致力于连接文化产业与资本市场，以专业洞察与国际视野，为客户创造长期价值。",
     "heroCtaPrimary": "了解我们的服务",
     "heroCtaSecondary": "预约咨询",
     "introEyebrow": "我们是谁",
@@ -45,7 +45,8 @@
     "pillar4Title": "品牌与文化 IP 开发",
     "pillar4Desc": "从品牌定位到 IP 孵化，构建具有长期价值的文化资产与商业模式。",
     "philosophyEyebrow": "品牌理念",
-    "philosophyTitle": "Inspire Minds. Cultivate Value.",
+    "philosophyTitle": "以心智激发创造，以创造成就价值",
+    "philosophySub": "Inspire Minds. Cultivate Value.",
     "philosophyBody": "我们相信，真正的价值源于文化与资本的深度对话——以心智激发创造，以创造成就价值。这不仅是我们的品牌哲学，也是我们与每一位合作伙伴共同前行的方式。",
     "ctaTitle": "让我们开始一段有价值的合作",
     "ctaBody": "无论您是寻求战略咨询、资本对接，还是内容与品牌服务，我们的团队随时准备与您深入交流。",
@@ -54,7 +55,7 @@
   "about": {
     "eyebrow": "关于我们",
     "title": "以专业与远见，连接文化与资本",
-    "leadBody": "红云文化传媒有限公司（Molnet Cultural Communication Limited）成立以来，始终致力于成为文化产业与资本市场之间值得信赖的桥梁。我们相信，优秀的文化内容与理性的资本力量结合，能够创造持久而深远的价值。",
+    "leadBody": "红云文化传媒（Molnet Cultural Communication LLC）成立以来，始终致力于成为文化产业与资本市场之间值得信赖的桥梁。我们相信，优秀的文化内容与理性的资本力量结合，能够创造持久而深远的价值。",
     "storyEyebrow": "我们的故事",
     "storyTitle": "从专业出发，向价值而行",
     "storyBody1": "红云文化传媒由一群深耕文化产业、金融投资与国际传播领域的专业人士共同创立。我们深知，文化项目的成功不仅需要创意与内容，更需要清晰的战略与稳健的资本支持。",
@@ -70,8 +71,8 @@
     "value4Title": "诚信共赢",
     "value4Desc": "以诚信为基石，与合作伙伴共同分享成长带来的长期价值。",
     "philosophyEyebrow": "品牌哲学",
-    "philosophyQuote": "Where Culture Meets Capital, Intellect Meets Value.",
-    "philosophyQuoteZh": "文化与资本交汇，心智与价值共生。",
+    "philosophyQuote": "文化与资本交汇，心智与价值共生",
+    "philosophyQuoteZh": "Where Culture Meets Capital, Intellect Meets Value.",
     "philosophyBody": "这句话是红云文化传媒的核心信条——我们既是文化的守护者，也是价值的创造者。在每一个项目中，我们都努力让文化的深度与资本的力量彼此成就。",
     "teamEyebrow": "团队",
     "teamTitle": "由行业资深人士组成的专业团队",
@@ -131,11 +132,11 @@
     "formNote": "提交表单即代表您同意我们通过以上联系方式与您沟通。",
     "infoTitle": "联系方式",
     "infoAddressLabel": "地址",
-    "infoAddress": "中国上海市（示例地址，待补充）",
+    "infoAddress": "美国 俄怀明州 谢里丹；中国 北京",
     "infoPhoneLabel": "电话",
-    "infoPhone": "+86 400-000-0000（占位）",
+    "infoPhone": "+1 315-881-3899",
     "infoEmailLabel": "邮箱",
-    "infoEmail": "contact@molnet.example（占位）",
+    "infoEmail": "contact@molnet.cc",
     "infoHoursLabel": "工作时间",
     "infoHours": "周一至周五 9:00–18:00"
   }

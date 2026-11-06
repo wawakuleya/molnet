@@ -1,9 +1,9 @@
 {
   "meta": {
     "siteName": "Molnet",
-    "siteNameEn": "Molnet",
-    "titleSuffix": "Molnet Cultural Communication Limited",
-    "description": "Molnet Cultural Communication Limited — Where Culture Meets Capital, Intellect Meets Value."
+    "siteNameEn": "Molnet Cultural Communication LLC",
+    "titleSuffix": "Molnet Cultural Communication LLC",
+    "description": "Molnet Cultural Communication LLC — Where Culture Meets Capital, Intellect Meets Value."
   },
   "nav": {
     "home": "Home",
@@ -23,7 +23,7 @@
     "eyebrow": "Molnet Cultural Communication",
     "heroTitleLine1": "Where Culture Meets Capital",
     "heroTitleLine2": "Intellect Meets Value",
-    "heroSubtitle": "Molnet Cultural Communication Limited bridges the cultural industry and capital markets — creating lasting value through insight and a global perspective.",
+    "heroSubtitle": "Molnet Cultural Communication LLC bridges the cultural industry and capital markets — creating lasting value through insight and a global perspective.",
     "heroCtaPrimary": "Explore Our Services",
     "heroCtaSecondary": "Book a Consultation",
     "introEyebrow": "Who We Are",
@@ -54,7 +54,7 @@
   "about": {
     "eyebrow": "About Us",
     "title": "Connecting Culture and Capital with Expertise and Vision",
-    "leadBody": "Since its founding, Molnet Cultural Communication Limited has been committed to becoming a trusted bridge between the cultural industry and capital markets. We believe that outstanding cultural content, combined with rational capital, creates value that lasts.",
+    "leadBody": "Since its founding, Molnet Cultural Communication LLC has been committed to becoming a trusted bridge between the cultural industry and capital markets. We believe that outstanding cultural content, combined with rational capital, creates value that lasts.",
     "storyEyebrow": "Our Story",
     "storyTitle": "Grounded in Expertise, Moving Toward Value",
     "storyBody1": "Molnet was founded by a group of professionals deeply rooted in the cultural industry, finance and international communication. We understand that a cultural project's success requires not only creativity, but clear strategy and solid capital support.",
@@ -131,11 +131,11 @@
     "formNote": "By submitting this form you agree to be contacted via the details provided.",
     "infoTitle": "Contact Information",
     "infoAddressLabel": "Address",
-    "infoAddress": "Shanghai, China (placeholder address)",
+    "infoAddress": "Sheridan, WY, USA; Beijing, China",
     "infoPhoneLabel": "Phone",
-    "infoPhone": "+86 400-000-0000 (placeholder)",
+    "infoPhone": "+1 315-881-3899",
     "infoEmailLabel": "Email",
-    "infoEmail": "contact@molnet.example (placeholder)",
+    "infoEmail": "contact@molnet.cc",
     "infoHoursLabel": "Business Hours",
     "infoHours": "Mon–Fri, 9:00–18:00"
   }
